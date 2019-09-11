@@ -1,0 +1,67 @@
+`BIG DATA TECHNICAL`
+CH1==========================
+big data analytics with scalability and streaming capability
+distributed file systems
+	'google file system
+	'hadoop distributed file system
+	'cloudstore
+	'mapreduce
+similarity search techniques
+	hash related
+algorithms
+search and query
+machine learning
+recommendatiion system and matrix factorization
+grahph analysis
+support vector machine(SVM) and online learning
+Q(single machine in-memory)
+tool:
+	linear algebra(SVD)
+	optimization(stocastic gradient descent)
+	dynamic programming
+	hashing
+	deep learning
+evolution of big data
+	birth:1880 US census
+	adolescense: big science(Manhattan Project catalyst for big science)
+	modern era: big business
+
+characteristics of big data:4V
+	`volume
+	`velocity
+	`variety
+	`veracity
+
+need to know
+	hash function
+	secondary storage
+	
+CH2========================
+data characteristics:
+	apps need streaming access to data.
+	数据量大
+	batch processing without user interaction
+	write-once-and-read-many:concurrent access
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

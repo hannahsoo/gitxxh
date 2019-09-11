@@ -1,0 +1,132 @@
+minizinc
+配环境？
+command line:
+minizinc xxx.mzn执行
+minizinc xxx.mzn data.mzn执行带数据的模型
+minizinc -a xxx.mzn显示所有结果
+int : xx = ? ;
+basic parameter types:
+	int
+	float
+	bool
+	string
+	also support array
+minizinc包含两种变量，一种上面的参数变量，一种决策变量(decision variables)
+each decision variable 有一个可能的值的集合，叫做变量定义域(domain)
+decision variables types:
+	int
+	bool
+	float
+	set
+	also support array(whose elements are decision variables)
+
+整型变量声明
+	integer parameter:
+		int : <name>;
+		<i>..<u> : <name>;
+	integer decision variable:
+		var int : <name>;
+		vat <i>..<u> : <name>;
+	
+输出？
+output [];//语法
+show(e)//e是minizic表达式
+show_int(n,x)//if n>0,在n个位置内右对齐输出x
+show_float(n,d,x)//d表示几位小数
+字符流必须在一行引号内，如果太长用++连接
+"adsfdfsad" ++
+"dsgvefwe"
+minizinc支持内插字符串,表达式可以在字符串内部
+"\(e)" == show(e)
+"t=\(t)\n" == "t=" ++ show(t) ++ "\n"
+
+整数运算
++,-,*,div,mod
+
+不用数据文件时可以在命令行提供数据
+$ minizinc cakes2.mzn -D "flour=4000;banana=6;sugar=2000;butter=500;cocoa=500;"
+不用反斜杠换行。。
+
+命令行minizinc -a xxx.mzn 可现实所有结果
+
+Q:Error: Gecode: Float::linear: Number out of limits
+A:use other solver,COIN-BC
+
+自带函数bool2int()//把bool类型转换成01
+在算式中，不用写bool2int(),minizinc会自动调用
+
+var set of MOVES : name;%set从集合的子集中选取
+(i in name)可以是个bool expr
+variable set
+
+set操作符
+	in
+	subset,superset
+	intersect
+	union
+	card
+	diff
+	symdiff	%取不在交集中的元素
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
