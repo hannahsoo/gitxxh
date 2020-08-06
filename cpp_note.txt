@@ -1,0 +1,39 @@
+kxqnhzfy
+
+stringstream
+
+Needs the head file <sstream>
+
+```
+string s ="asdvwe";
+
+Stringstream ss;
+
+ss<<s;//write into ss
+
+str="abd vds";
+
+Streamstring a(str);
+
+a>>str1>>str2;//split by ' '
+```
+
+Attention: **cin>>s;** can only get chars before blank or \n \t... 
+
+
+
+Use string stream to split str:
+
+```
+String str = "A10;S20;W10;D30;X;A1A;B10A11;;A10;";
+stringstream ss(str);
+string item;
+while(getline(ss,item,';')){}//split str by ';'
+```
+
+
+
+
+
+
+
